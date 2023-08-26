@@ -1,0 +1,13 @@
+.book {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.book img{
+    height: 100%;
+    width: auto;
+}

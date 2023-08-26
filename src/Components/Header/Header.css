@@ -1,0 +1,130 @@
+.Header {
+    display: flex;
+    padding: 0.5rem 2rem;
+    max-height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #272323;
+}
+
+.Header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 13.8rem;
+}
+
+.logo1 {
+    height: 3rem;
+}
+
+.logo2 {
+    height: 1.2rem;
+}
+
+.Header-search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 30rem;
+}
+.inner-search-bar {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    background-color: #373737;
+}
+
+.inner-search-bar input {
+    min-width: 27rem;
+    background-color: inherit;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.3rem 1rem;
+    color: #ffffff7e;
+}
+.inner-search-bar input:focus{
+    outline: none;
+}
+
+.search-icon {
+    color: #ffffff7e;
+}
+
+.search-bar {
+    padding: 0.3rem 2rem;
+    margin-left: 0.3rem;
+    font-size: 1rem;
+    border: 1px solid #ffffff7e;
+    color: #ffffff7e;
+    background-color: #272323;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.Header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 12rem;
+    max-height: 2rem;
+}
+
+.Header-nav img {
+    width: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .menu {
+        color: #ffffff7e;
+        cursor: pointer;
+    }
+    .active {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        min-width: 2rem;
+        gap: 1rem;
+        border: 1px solid red;
+    }
+    .hidden {
+        display: none;
+    }
+}
+@media screen and (max-width: 950px) {
+    .menu-bar {
+        display: none;
+    }
+
+    .Header-search-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+    }
+    .inner-search-bar {
+        padding: 0.2rem;
+        width: 100%;
+    }
+
+    .inner-search-bar input {
+        width: 100%;
+        border: 1px solid red;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .search-bar {
+        padding: 0.3rem 2rem;
+        margin-left: 0.3rem;
+        font-size: 1rem;
+        border: 1px solid #ffffff7e;
+        color: #ffffff7e;
+        background-color: #272323;
+        cursor: pointer;
+    }
+}
